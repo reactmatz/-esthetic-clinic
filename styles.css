@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gruppo&family=Lato:ital,wght@0,100;0,300;1,300;1,400&family=Merriweather:wght@300;400;700;900&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;1,500&display=swap");
+
+/* ------- reset -------- */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "roboto";
+  text-decoration: none;
+  
+}
+body {
+  width: 100vw;
+  height: 2000px;
+  background: linear-gradient(45deg, #034d76, #00a79d) no-repeat;
+}
+
+/* ------ CONTAINER ------- */
+
+.main-content {
+  width: 70vw;
+  height: 100vh;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+/* --------- CABEÇALHO -------- */
+
+.header-content {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ------ logo -------- */
+
+.header-content .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-content .logo img {
+  width: 100px;
+}
+
+.header-content .logo span {
+  font-size: 25px;
+  color: #000;
+}
+
+/* ------- menu ------ */
+
+.header-content .menu ul li {
+  display: inline-block;
+  margin-left: 15px;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: 600;
+  color: #000;
+}
+
+.header-content .menu ul li:hover {
+  color: #fff;
+  background-color: #00a79d;
+  transition: all 0.3s ease-in;
+}
+
+/* ---- SECTION 1 --- */
+
+.sec1 {
+  width: 100%;
+  height: 800px;
+  background-image: url(assets/bg3.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+/* --- SECTION 1 LETRAS --- */
+.sec1 .letter-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  margin-bottom: 100px;
+  margin-left: 40px;
+  color: #fff;
+}
+.sec1 .letter-content h1 {
+  font-size: 30px;
+}
+.sec1 .letter-content p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* -------- SECTION 1 CARDS ----------- */
+
+.sec1 .cards-container {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+}
+.sec1 .cards-container .card {
+  height: 200px;
+  background-color: #034d76;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 20px 20px;
+  padding: 10px;
+}
+
+.sec1 .cards-container button {
+  width: 60%;
+  margin-top: 25px;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+/*----- SECTION 2 -----*/
+
+.sec2 {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  background-color: #fff;
+}
+/* -------- SECTION 2 COLUMN 1 H1 ---------- */
+.sec2 .container-cards .col-1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 10%;
+  background-color: #034d76;
+  color: #fff;
+  align-items: center;
+}
+
+/* --------- CONTAINER COLUMN ---------- */
+
+.sec2 .container-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --------- COLUMNS -------- */
+
+.sec2 .container-cards .col-card {
+  display: flex;
+  width: 100%;
+  height: 40%;
+}
+
+/* ---------- CARDS EDIT -------- */
+
+.sec2 .container-cards .col-card .card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 0 20px 0 20px;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+/* ---------- CARDS EDIT H1 -------- */
+.sec2 .container-cards .col-card .card .name {
+  display: flex;
+  height: 15%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+/* ---------- CARDS EDIT TEXT -------- */
+
+.sec2 .container-cards .col-card .card .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  font-weight: 500;
+}
+.sec2 .container-cards .col-card .card button {
+  margin-top: 8px;
+  border: none;
+  padding: 10px;
+  background-color: #034d76;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sec2 .container-cards .col-card .card .foto {
+  height: 60%;
+}
+/* --------- EDIT FOTO CARD ------ */
+
+.sec2 .container-cards .col-card .card .foto img {
+  height: 100%;
+  width: 100%;
+}
+
+/* ------ COLUMN 4 ------ */
+
+.col-4 {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 35px;
+  color: #fff;
+  background-color: #034d76;
+  margin-top: 20px;
+}
+.col-4 button {
+  padding: 10px 10px;
+  font-weight: 500;
+  border: none;
+  width: 15rem;
+  height: 3rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.col-4 button:hover {
+  background-color: #e03b3b;
+  color: #fff;
+  transform: scale(1.1);
+  transition: all ease 0.5s;
+}
